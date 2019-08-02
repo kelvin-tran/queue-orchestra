@@ -5,7 +5,7 @@ from typing import Callable
 from google.cloud import pubsub_v1
 
 
-class GooglePublisher(object):
+class GoogleListener(object):
 
     def __init__(self, subscription_name: str):
         self.subscriber = pubsub_v1.SubscriberClient()
